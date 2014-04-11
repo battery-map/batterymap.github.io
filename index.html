@@ -39,15 +39,15 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-bars"></i></button>
-                    <a class="navbar-brand nav-link" href="#top"><img class="logo" alt="logo" src="" /></a> <!-- Add your own logo to the images folder -->
+                    <!-- <a class="navbar-brand nav-link" href="#top"><img class="logo" alt="logo" src="" /></a> --> <!-- Add your own logo to the images folder -->
                 </div> <!-- end navbar-header -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="nav-link" href="#top">Главная</a></li>
                         <li><a class="nav-link" href="#features-link">Информация</a></li>
-                        <li><a class="nav-link" href="#newsletter-link">Польза</a></li>
-                        <li><a class="nav-link" href="#sections-link">Карта</a></li>
-                        <li><a class="nav-link" href="#">Блог</a></li>
+                        <li><a class="nav-link" href="#map-link">Карта</a></li>
+                        <li><a class="nav-link" href="#profit-link">Польза</a></li>
+                        <li><a class="nav-link" href="#team-link">Команда</a></li>
                         <li><a class="nav-link" href="#contact-link">Контакты</a></li>
                     </ul> <!-- end navbar-nav -->
                 </div><!-- end navbar-collapse -->
@@ -62,7 +62,7 @@
             <h1 class="main-heading">Не выбрасывай батарейку</h1>
             <p class="main-subline">Сдай её в утилизацию</p>
             <a class="main-link nav-link btn btn-lg" href="#features-link">Зачем?</a>
-            <a class="main-link nav-link btn btn-lg" href="#pricing-link">Куда?</a>
+            <a class="main-link nav-link btn btn-lg" href="#map-link">Куда?</a>
         </div> <!-- end container -->
     </div> <!-- end main -->
     
@@ -111,204 +111,154 @@
         </div> <!-- end container -->
     </div> <!-- end features -->
     
-    <!-- NEWSLETTER -->
-    <div id="newsletter-link"></div>
+    <!-- MAP -->
+    <div id="map-link"></div>
     <div class="newsletter">
         <div class="container">
-            <h1 class="heading">Newsletter</h1>
-            <form action="scripts/newsletter.php" method="post" id="newsletter-form">
-                <div class="input-group input-group-lg">
-                    <input type="email" name="newsletter-email" id="newsletter-email" class="form-control" placeholder="Enter Your Email" data-validate="validate(required, email)" />
-                    <span class="input-group-btn">
-                        <input type="submit" id="newsletter-submit" class="btn" value="Subscribe" />
-                    </span> <!-- end input-group-btn -->
-                </div> <!-- end input-group -->
-                <div class="alert alert-success" id="newsletter-success"></div>
-				<div class="alert alert-danger" id="newsletter-error"></div>
-            </form> <!-- end newsletter-form -->
+            <h1 class="heading">Пункты приёма батареек в Перми</h1>
+            <div id="YMapsID" style="width: 100%; height: 500px"></div>
         </div> <!-- end container -->
-    </div> <!-- end updates -->
+    </div> <!-- end map -->
     
+
     <!-- FEATURE SECTIONS -->
-    <div id="sections-link"></div>
+    <div id="profit-link"></div>
     <div class="feature-section">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 feature-section-left">
-                    <img src="http://placehold.it/800x600" alt="image alt" class="feature-section-image" />
-                </div> <!-- end col-sm-6 -->
-                <div class="col-sm-6 feature-section-right">
-                    <h1 class="feature-section-heading">Feature Section</h1>
-                    <p class="feature-section-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, iusto, tempore, vero, eius debitis soluta quidem cumque recusandae adipisci voluptates dolor consequuntur voluptatem pariatur tempora dolorum? Totam quod velit alias!</p>
-                </div> <!-- end col-sm-6 -->
-            </div> <!-- end row -->
+            <h1 class="heading">Вместе мы уже собрали</h1>
+
+            <ul id="countdown" class="list-inline">
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li>
+                    <h1>Батареек</h1>
+                </li>
+            </ul>
+
+            <br>
+            <br>
+            <br>
+            <h1 class="heading">Мы помогли предотвратить загрязнение</h1>
+
+            <ul id="countdown" class="list-inline">
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li>
+                    <h1>миллионов литров воды</h1>
+                </li>
+            </ul>
+
+            <ul id="countdown" class="list-inline">
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li class="time">
+                    9
+                </li>
+                <li>
+                    <h1>тысяч км<sup>2</sup> земли</h1>
+                </li>
+            </ul>
         </div> <!-- end container -->
     </div> <!-- end feature-section -->
-    <div class="feature-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 feature-section-left">
-                    <h1 class="feature-section-heading">Gallery Example</h1>
-                    <p class="feature-section-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, iusto, tempore, vero, eius debitis soluta quidem cumque recusandae adipisci voluptates dolor consequuntur voluptatem pariatur tempora dolorum? Totam quod velit alias!</p>
-                </div> <!-- end col-sm-6 -->
-                <div class="col-sm-6 feature-section-right">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li><img src="http://placehold.it/800x600" alt="image alt" class="feature-section-image" /></li>
-                            <li><img src="http://placehold.it/800x600" alt="image alt" class="feature-section-image" /></li>
-                            <li><img src="http://placehold.it/800x600" alt="image alt" class="feature-section-image" /></li>
-                            <li><img src="http://placehold.it/800x600" alt="image alt" class="feature-section-image" /></li>
-                        </ul> <!-- end slides -->
-                    </div> <!-- end flexslider -->
-                </div> <!-- end col-sm-6 -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </div> <!-- end feature-section -->
-    <div class="feature-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 feature-section-left">
-                    <div class="video-container">
-                        <iframe width="420" height="315" src="//www.youtube.com/embed/XQu8TTBmGhA" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div> <!-- end col-sm-6 -->
-                <div class="col-sm-6 feature-section-right">
-                    <h1 class="feature-section-heading">Video Example</h1>
-                    <p class="feature-section-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, iusto, tempore, vero, eius debitis soluta quidem cumque recusandae adipisci voluptates dolor consequuntur voluptatem pariatur tempora dolorum? Totam quod velit alias!</p>
-                </div> <!-- end col-sm-6 -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </div> <!-- end feature-section -->
+
     
-    <!-- PRICING -->
-    <div id="pricing-link"></div>
-    <div class="pricing">
-        <div class="container">
-            <h1 class="heading">Pricing</h1>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="pricing-table">
-                        <h2 class="pricing-table-title">Basic</h2>
-                        <h1 class="pricing-table-price">$29 <span class="per-month">per month</span></h1>
-                        <h3 class="pricing-table-desc">Description</h3>
-                        <ul class="list-unstyled">
-                            <li class="pricing-table-feature">Put your</li>
-                            <li class="pricing-table-feature">list</li>
-                            <li class="pricing-table-feature">of features</li>
-                            <li class="pricing-table-feature">here.</li>
-                        </ul>
-                        <div class="pricing-table-footer">
-                            <a href="#" class="btn btn-lg btn-block">Buy Now</a>
-                        </div> <!-- pricing-table-footer -->
-                    </div> <!-- end pricing-table -->
-                </div> <!-- end col-sm-4 -->
-                <div class="col-sm-4">
-                    <div class="pricing-table best-deal">
-                        <h2 class="pricing-table-title">Advanced <span class="best-deal-label">Best Deal</span></h2>
-                        <h1 class="pricing-table-price">$99 <span class="per-month">per month</span></h1>
-                        <h3 class="pricing-table-desc">Description</h3>
-                        <ul class="list-unstyled">
-                            <li class="pricing-table-feature">Put your</li>
-                            <li class="pricing-table-feature">list</li>
-                            <li class="pricing-table-feature">of features</li>
-                            <li class="pricing-table-feature">here.</li>
-                        </ul>
-                        <div class="pricing-table-footer">
-                            <a href="#" class="btn btn-lg btn-block">Buy Now</a>
-                        </div> <!-- pricing-table-footer -->
-                    </div> <!-- end pricing-table -->
-                </div> <!-- end col-sm-4 -->
-                <div class="col-sm-4">
-                    <div class="pricing-table">
-                        <h2 class="pricing-table-title">Elite</h2>
-                        <h1 class="pricing-table-price">$199 <span class="per-month">per month</span></h1>
-                        <h3 class="pricing-table-desc">Description</h3>
-                        <ul class="list-unstyled">
-                            <li class="pricing-table-feature">Put your</li>
-                            <li class="pricing-table-feature">list</li>
-                            <li class="pricing-table-feature">of features</li>
-                            <li class="pricing-table-feature">here.</li>
-                        </ul>
-                        <div class="pricing-table-footer">
-                            <a href="#" class="btn btn-lg btn-block">Buy Now</a>
-                        </div> <!-- pricing-table-footer -->
-                    </div> <!-- end pricing-table -->
-                </div> <!-- end col-sm-4 -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </div> <!-- end updates -->
-    
-    <!-- GALLERY -->
-    <div id="gallery-link"></div>
+    <!-- TEAM -->
+    <div id="team-link"></div>
     <div class="gallery">
-        <h1 class="heading">Gallery</h1>
+        <h1 class="heading">Наша команда</h1>
         <ul class="grid">
             <li>
                 <figure>
-                    <img src="http://placehold.it/800x600" alt="image alt" />
+                    <img src="images/daria-kazantseva_photo.jpg" alt="Дарья Казанцева" />
                     <figcaption>
-                        <h3>Title</h3>
-                        <span>Subline/Author</span>
-                        <a href="#">Optional Link</a>
+                        <h3>Дарья Казанцева</h3>
+                        <span>Соавтор проекта / Дизайнер</span>
+                        <a href="https://vk.com/ka_daria"><i class="fa fa-vk"></i> ВКонтакте</a>
                     </figcaption>
                 </figure>
             </li>
+
             <li>
                 <figure>
-                    <img src="http://placehold.it/800x600" alt="image alt" />
+                    <img src="images/konstantin_simakov_photo.jpg" alt="Константин Симаков" />
                     <figcaption>
-                        <h3>Title</h3>
-                        <span>Subline/Author</span>
-                        <a href="#">Optional Link</a>
+                        <h3>Константин Симаков</h3>
+                        <span>Автор проекта / Разработчик</span>
+                        <a href="https://vk.com/gigabytetheone"><i class="fa fa-vk"></i> ВКонтакте</a>
                     </figcaption>
                 </figure>
             </li>
+
             <li>
                 <figure>
-                    <img src="http://placehold.it/800x600" alt="image alt" />
+                    <img src="images/julie_orekhova_photo.jpg" alt="Юлия Орехова" />
                     <figcaption>
-                        <h3>Title</h3>
-                        <span>Subline/Author</span>
-                        <a href="#">Optional Link</a>
+                        <h3>Юлия Орехова</h3>
+                        <span>Соавтор проекта</span>
+                        <a href="https://vk.com/lily_vitamin"><i class="fa fa-vk"></i> ВКонтакте</a>
                     </figcaption>
                 </figure>
             </li>
         </ul>
-    </div> <!-- end gallery -->
+    </div> <!-- end team -->
     
     <!-- CONTACT -->
     <div id="contact-link"></div>
     <div class="contact">
         <div class="container">
-            <h1 class="heading">Contact Us</h1>
+            <h1 class="heading">Вы хотите добавить свою точку на карту?</h1>
+            <h1 class="heading">У вас есть предложения?</h1>
             <div class="row">
                 <div class="col-sm-6 contact-infos">
-                    <p class="lead">You can put some information here.</p>
+                    <p class="lead">Свяжитесь с нами, вместе мы сможем значительно больше!</p>
                     <div class="contact-info">
-                        <p class="address"><i class="fa fa-map-marker"></i> 123 Some Street, Some City</p>
-                        <p class="address"><i class="fa fa-phone"></i> 1-123-456-7890</p>
-                        <p class="address"><i class="fa fa-globe"></i> www.example.com</p>
+                        <p class="address"><i class="fa fa-user"></i> Константин Симаков </p>
+                        <p class="address"><i class="fa fa-phone"></i> <a href="call:+79226403832">+7-922-640-38-32</a> </p>
+                        <p class="address"><i class="fa fa-globe"></i> <a href="mailto:gigabytetheone@gmail.com">gigabytetheone@gmail.com</a> </p>
                     </div>
                 </div> <!-- end col-sm-6 -->
                 <div class="col-sm-6">
                     <form action="scripts/contact.php" method="post" id="contact-form">
                         <div class="input-group">
-                            <span class="input-group-addon tool-tip" title="Your Name" data-placement="left"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Your Name" data-validate="validate(required)" />
+                            <span class="input-group-addon tool-tip" title="Представьтесь, пожалуйста" data-placement="left"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Представьтесь, пожалуйста" data-validate="validate(required)" />
                         </div> <!-- end input-group -->
                         <div class="input-group">
-                            <span class="input-group-addon tool-tip" title="Your Email (Will Not Be Published)" data-placement="left"><i class="fa fa-envelope"></i></span>
-                            <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Your Email (Will Not Be Published)" data-validate="validate(required, email)" />
+                            <span class="input-group-addon tool-tip" title="Ваш Email (мы нигде его не публикуем)" data-placement="left"><i class="fa fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Ваш Email (мы нигде его не публикуем)" data-validate="validate(required, email)" />
                         </div> <!-- end input-group -->
                         <div class="input-group">
-                            <span class="input-group-addon tool-tip" title="Your Website (Optional)" data-placement="left"><i class="fa fa-globe"></i></span>
-                            <input type="url" class="form-control" id="contact-website" name="contact-website" placeholder="Your Website (Optional)" />
+                            <span class="input-group-addon tool-tip" title="Ваше сообщение" data-placement="left"><i class="fa fa-pencil"></i></span>
+                            <textarea class="form-control" id="contact-message" name="contact-message" placeholder="Ваше сообщение" rows="5" data-validate="validate(rangelength(1, 1000))"></textarea>
                         </div> <!-- end input-group -->
-                        <div class="input-group">
-                            <span class="input-group-addon tool-tip" title="Your Message" data-placement="left"><i class="fa fa-pencil"></i></span>
-                            <textarea class="form-control" id="contact-message" name="contact-message" placeholder="Your Message" rows="5" data-validate="validate(rangelength(1, 1000))"></textarea>
-                        </div> <!-- end input-group -->
-                        <input type="submit" class="btn btn-lg btn-block" id="contact-form-submit" name="contact-form-submit" value="Send" />
+                        <input type="submit" class="btn btn-lg btn-block" id="contact-form-submit" name="contact-form-submit" value="Отправить" />
                         <div class="alert alert-success" id="contact-success"></div>
 						<div class="alert alert-danger" id="contact-error"></div>
                     </form> <!-- end contact-form -->
@@ -322,20 +272,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <span class="copyright">Einstein Copyright &copy; 2013</span>
+                    <span class="copyright">Copyright &copy; 2014 <a href="http://gigabytetheone.github.io/">Konstantin Simakov</a></span>
                 </div> <!-- end col-sm-4 -->
                 <div class="col-sm-4 footer-middle">
                     <a href="#top" class="nav-link tool-tip" title="Go To Top" data-placement="top"><i class="fa fa-chevron-circle-up"></i></a>
                 </div> <!-- end col-sm-4 -->
                 <div class="col-sm-4 footer-last">
                     <div class="social-icons">
-                        <a href="#" class="social-icon tool-tip" title="Facebook" data-placement="top"><i class="fa fa-facebook-square"></i></a>
+                        <!-- <a href="#" class="social-icon tool-tip" title="Facebook" data-placement="top"><i class="fa fa-facebook-square"></i></a> -->
                         <a href="#" class="social-icon tool-tip" title="Twitter" data-placement="top"><i class="fa fa-twitter-square"></i></a>
-                        <a href="#" class="social-icon tool-tip" title="LinkedIn" data-placement="top"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="#" class="social-icon tool-tip" title="Tumblr" data-placement="top"><i class="fa fa-tumblr-square"></i></a>
-                        <a href="#" class="social-icon tool-tip" title="Instagram" data-placement="top"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="social-icon tool-tip" title="Vimeo" data-placement="top"><i class="fa fa-vimeo-square"></i></a>
-                        <a href="#" class="social-icon tool-tip" title="YouTube" data-placement="top"><i class="fa fa-youtube-square"></i></a>
+                        <a href="#" class="social-icon tool-tip" title="ВКонтакте" data-placement="top"><i class="fa fa-vk"></i></a>
+                        <!-- <a href="#" class="social-icon tool-tip" title="LinkedIn" data-placement="top"><i class="fa fa-linkedin-square"></i></a> -->
+                        <!-- <a href="#" class="social-icon tool-tip" title="Tumblr" data-placement="top"><i class="fa fa-tumblr-square"></i></a> -->
+                        <!-- <a href="#" class="social-icon tool-tip" title="Instagram" data-placement="top"><i class="fa fa-instagram"></i></a> -->
+                        <!-- <a href="#" class="social-icon tool-tip" title="Vimeo" data-placement="top"><i class="fa fa-vimeo-square"></i></a> -->
+                        <!-- <a href="#" class="social-icon tool-tip" title="YouTube" data-placement="top"><i class="fa fa-youtube-square"></i></a> -->
                     </div> <!-- end social-icons -->
                 </div> <!-- end col-sm-4 -->
             </div> <!-- end row -->
@@ -344,6 +295,8 @@
     
     <!-- SCRIPTS -->
     
+    <!-- Yandex Maps -->
+    <script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
     <!-- jQuery 1.10.2 -->
     <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
     <!-- Bootstrap 3.0.2 -->
@@ -360,6 +313,8 @@
     <script type="text/javascript" src="flex-slider/jquery.flexslider-min.js"></script>
     <!-- SCRIPTS.JS -->
     <script type="text/javascript" src="scripts/scripts.js"></script>
+
+
 
 </body>
 </html>

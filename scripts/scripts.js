@@ -1,166 +1,205 @@
 (function($) {
-    "use strict";
-    
-    /* SMOOTH SCROLL */
-    $('.nav-link').click(function(event){		
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-    });
-    
-    /* BACKGROUND PARALLAX */
-    function parallax() {
-        var scrolled = $(window).scrollTop();
-        $('.background').css('top', -(scrolled * 0.5) + 'px');
-    }
-    $(window).scroll(function(e) {
-        parallax();
-    });
-    
-    /* FlexSlider */
-    $('.flexslider').flexslider({
-        prevText: '<i class="fa fa-chevron-left"></i>',
-        nextText: '<i class="fa fa-chevron-right"></i>'
-    });
-    
-    /* FITVIDS */
-    $(".video-container").fitVids();
-    
-    /* TOOLTIPS */
-    $('.tool-tip').tooltip();
-    
-    /* CONTACT FORM */
+	"use strict";
+
+	/* YandexMaps */
+	ymaps.ready(function() {
+		var myMap = new ymaps.Map('YMapsID', {
+			center: [58.002741, 56.254059],
+			zoom: 12,
+			controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
+		});
+
+		var placemarks = [{
+			coords: [58.0080, 56.186129],
+			header: 'Корпус №8 Пермского университета ПГНИУ',
+			text: 'Семиэтажный геолого-географический корпус. Рядом находится фонтан<br>Аудитория 208',
+			schedule: 'По будням с 9 до 19 ч. (тел. 239-62-42)',
+			address: 'улица Генкеля, 8',
+			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg'
+		}, {
+			coords: [57.994357, 56.238606],
+			header: 'Социокультурный фонд "Нанук"',
+			text: 'Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
+			address: 'улица Елькина, 45',
+			schedule: 'По будням, с 9 до 21 ч.',
+			imageUrl: 'http://s.properm.ru/localStorage/collection/83/c1/fd/f6/83c1fdf6_resizedScaled_659to439.jpg'
+		}, {
+			coords: [58.008507, 56.287343],
+			header: 'Пермский Центр природного земледелия "Сияние"',
+			text: 'Цокольный этаж, вход с ул. Макаренко.',
+			address: 'улица Макаренко 50 / улица Крупской, 61',
+			schedule: 'По будням, с 9 до 21 ч.',
+			imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg'
+		}, {
+			coords: [58.003719, 56.295197],
+			header: 'Контейнер для сбора у подъезда',
+			text: 'Первый подъезд',
+			address: 'улица Аркадия Гайдара, 3',
+			schedule: 'Круглосуточно',
+			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg'
+		}];
+
+		for (var index = 0; index < placemarks.length; index++) {
+			var placeInfo = placemarks[index];
+
+			var placeObject = new ymaps.GeoObject({
+				geometry: {
+					type: "Point",
+					coordinates: placeInfo.coords
+				},
+				properties: {
+					hintContent: placeInfo.header,
+					balloonContentHeader: placeInfo.header,
+					balloonContentBody: placeInfo.text + '<br>' + placeInfo.schedule,
+					balloonContentFooter: '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />'
+				}
+			}, {
+				preset: "twirl#yellowDotIcon"
+			});
+
+			myMap.geoObjects.add(placeObject);
+		}
+
+
+	});
+
+	/* SMOOTH SCROLL */
+	$('.nav-link').click(function(event) {
+		event.preventDefault();
+		$('html,body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 500);
+	});
+
+	/* BACKGROUND PARALLAX */
+	function parallax() {
+		var scrolled = $(window).scrollTop();
+		$('.background').css('top', -(scrolled * 0.5) + 'px');
+	}
+	$(window).scroll(function(e) {
+		parallax();
+	});
+
+	/* FlexSlider */
+	$('.flexslider').flexslider({
+		prevText: '<i class="fa fa-chevron-left"></i>',
+		nextText: '<i class="fa fa-chevron-right"></i>'
+	});
+
+	/* FITVIDS */
+	$(".video-container").fitVids();
+
+	/* TOOLTIPS */
+	$('.tool-tip').tooltip();
+
+	/* CONTACT FORM */
 	$('#contact-form').ketchup().submit(function() {
-        if ($(this).ketchup('isValid')) {
-            var action = $(this).attr('action');
-            $.ajax({
-                type: "POST",
-                url : action,
-                data: {
-                    contactname: $('#contact-name').val(),
-                    contactemail: $('#contact-email').val(),
-                    contactwebsite: $('#contact-website').val(),
-                    contactmessage: $('#contact-message').val()
-                },
-                success: function() {
-                    $('#contact-error').fadeOut();
-                    $('#contact-success').fadeOut();
-                    $('#contact-success').html('Success! Thanks for contacting us!').fadeIn();
-                },
-                error: function() {
-                    $('#contact-error').fadeOut();
-                    $('#contact-success').fadeOut();
-                    $('#contact-error').html('Sorry, an error occurred.').fadeIn();
-                }
-            });
-        }
-        return false;
-    });
-	
-	/* NEWSLETTER FORM */
-	$('#newsletter-form').ketchup().submit(function() {
 		if ($(this).ketchup('isValid')) {
 			var action = $(this).attr('action');
 			$.ajax({
+				type: "POST",
 				url: action,
-				type: 'POST',
 				data: {
-					newsletter_email: $('#newsletter-email').val()
+					contactname: $('#contact-name').val(),
+					contactemail: $('#contact-email').val(),
+					contactwebsite: $('#contact-website').val(),
+					contactmessage: $('#contact-message').val()
 				},
-				success: function(data) {
-                    $('#newsletter-error').fadeOut();
-                    $('#newsletter-success').fadeOut();
-                    $('#newsletter-success').html(data).fadeIn();
-                },
-                error: function() {
-                    $('#newsletter-error').fadeOut();
-                    $('#newsletter-success').fadeOut();
-                    $('#newsletter-error').html('Sorry, an error occurred.').fadeIn();
-                }
+				success: function() {
+					$('#contact-error').fadeOut();
+					$('#contact-success').fadeOut();
+					$('#contact-success').html('Сообщение успешно отправлено! Спасибо за участие').fadeIn();
+				},
+				error: function() {
+					$('#contact-error').fadeOut();
+					$('#contact-success').fadeOut();
+					$('#contact-error').html('Извините, возникла ошибка.').fadeIn();
+				}
 			});
 		}
 		return false;
 	});
-    
-    /* ANIMATIONS */
-    $('.navbar-brand').bind('inview', function (event, visible) {
+
+	/* ANIMATIONS */
+	$('.navbar-brand').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInLeft');
 		}
 	});
-    $('.navbar-nav a').bind('inview', function (event, visible) {
+	$('.navbar-nav a').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInRight');
 		}
 	});
-    $('.main').bind('inview', function (event, visible) {
+	$('.main').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInUp');
 		}
 	});
-    $('.feature-item').bind('inview', function (event, visible) {
+	$('.feature-item').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInUp');
 		}
 	});
-    $('.heading').bind('inview', function (event, visible) {
+	$('.heading').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInDown');
 		}
 	});
-    $('#newsletter-form').bind('inview', function (event, visible) {
+	$('#newsletter-form').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated bounceIn');
 		}
 	});
-    $('.feature-section-left').bind('inview', function (event, visible) {
+	$('.feature-section-left').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInLeft');
 		}
 	});
-    $('.feature-section-right').bind('inview', function (event, visible) {
+	$('.feature-section-right').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInRight');
 		}
 	});
-    $('.pricing-table').bind('inview', function (event, visible) {
+	$('.pricing-table').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInUp');
 		}
 	});
-    $('.pricing-table').bind('inview', function (event, visible) {
+	$('.pricing-table').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInUp');
 		}
 	});
-    $('.grid li').bind('inview', function (event, visible) {
+	$('.grid li').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeIn');
 		}
 	});
-    $('.contact-infos').bind('inview', function (event, visible) {
+	$('.contact-infos').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInLeft');
 		}
 	});
-    $('#contact-form').bind('inview', function (event, visible) {
+	$('#contact-form').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInRight');
 		}
 	});
-    $('.copyright').bind('inview', function (event, visible) {
+	$('.copyright').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInLeft');
 		}
 	});
-    $('.footer-middle').bind('inview', function (event, visible) {
+	$('.footer-middle').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated bounceIn');
 		}
 	});
-    $('.social-icons').bind('inview', function (event, visible) {
+	$('.social-icons').bind('inview', function(event, visible) {
 		if (visible === true) {
 			$(this).addClass('animated fadeInRight');
 		}
 	});
-    
+
 })(jQuery);

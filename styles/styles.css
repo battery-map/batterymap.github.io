@@ -507,3 +507,36 @@ CUSTOM STYLES
 accent {
     color: #e74c3c;
 }
+
+.map_baloon_image {
+    width: 300px;
+    height: auto;
+}
+
+.feature-section {
+    /*text-align: center;*/
+}
+
+/*
+COUNTDOWN STYLES
+*/
+
+#countdown {
+   margin-left: 100px; 
+}
+
+.time {
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #e74c3c;
+    border-radius: 100%;
+    margin: 0 8px;
+    margin-top: 5px;
+    transition: .25s;
+
+    line-height: 58px;
+    font-size: 2.2em;
+    font-family: 'Open Sans Condensed', 'Oswald', sans-serif;
+}
