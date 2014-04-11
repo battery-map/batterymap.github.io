@@ -6,7 +6,7 @@
     <title>Util Map</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="http://placehold.it/64x64" />
+    <link rel="shortcut icon" href="images/fav.png" />
     
     <!-- STYLES -->
     
@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-bars"></i></button>
-                    <!-- <a class="navbar-brand nav-link" href="#top"><img class="logo" alt="logo" src="" /></a> --> <!-- Add your own logo to the images folder -->
+                    <!-- <a class="navbar-brand nav-link" href="#top"><img class="logo" alt="logo" src="images/logo.png" /></a> --> <!-- Add your own logo to the images folder -->
                 </div> <!-- end navbar-header -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -48,6 +48,7 @@
                         <li><a class="nav-link" href="#map-link">Карта</a></li>
                         <li><a class="nav-link" href="#profit-link">Польза</a></li>
                         <li><a class="nav-link" href="#team-link">Команда</a></li>
+                        <li><a class="nav-link" href="#share-link">Поделиться</a></li>
                         <li><a class="nav-link" href="#contact-link">Контакты</a></li>
                     </ul> <!-- end navbar-nav -->
                 </div><!-- end navbar-collapse -->
@@ -58,7 +59,10 @@
     <!-- MAIN -->
     <div class="background"></div>
     <div class="main">
-        <div class="container">
+        <div class="container" style="position: relative">
+            <div class="top-image-wrapper">
+                <img class="top-image" src="images/BATTERY-angel-min.png" style=""/>
+            </div>
             <h1 class="main-heading">Не выбрасывай батарейку</h1>
             <p class="main-subline">Сдай её в утилизацию</p>
             <a class="main-link nav-link btn btn-lg" href="#features-link">Зачем?</a>
@@ -129,19 +133,19 @@
 
             <ul id="countdown" class="list-inline">
                 <li class="time">
-                    9
+                    1
                 </li>
                 <li class="time">
-                    9
+                    3
                 </li>
                 <li class="time">
-                    9
+                    4
                 </li>
                 <li class="time">
-                    9
+                    2
                 </li>
                 <li>
-                    <h1>Батареек</h1>
+                    <h1>тысяч батареек</h1>
                 </li>
             </ul>
 
@@ -152,16 +156,13 @@
 
             <ul id="countdown" class="list-inline">
                 <li class="time">
-                    9
+                    5
                 </li>
                 <li class="time">
-                    9
+                    3
                 </li>
                 <li class="time">
-                    9
-                </li>
-                <li class="time">
-                    9
+                    6
                 </li>
                 <li>
                     <h1>миллионов литров воды</h1>
@@ -170,19 +171,13 @@
 
             <ul id="countdown" class="list-inline">
                 <li class="time">
-                    9
+                    2
                 </li>
                 <li class="time">
-                    9
-                </li>
-                <li class="time">
-                    9
-                </li>
-                <li class="time">
-                    9
+                    6
                 </li>
                 <li>
-                    <h1>тысяч км<sup>2</sup> земли</h1>
+                    <h1>км<sup>2</sup> земли</h1>
                 </li>
             </ul>
         </div> <!-- end container -->
@@ -229,6 +224,46 @@
         </ul>
     </div> <!-- end team -->
     
+
+    <!-- SHARE -->
+    <div id="share-link"></div>
+    <div class="share">
+        <div class="container">
+            <h1 class="heading">Расскажи о нас друзьям. Каждый должен знать, как это важно!</h1>
+            <div class="row">
+                <div class="feature-item col-sm-3" id="twitter-share-button">
+                    <div class="feature-icon">
+                        <!-- <i class="fa fa-pagelines"></i> -->
+                        <i class="fa fa-twitter"></i>
+                    </div> <!-- end feature-icon -->
+                    <h3 class="feature-heading">Twitter</h3>
+                </div> <!-- end feature-item -->
+                <div class="feature-item col-sm-3" id="vk-share-button">
+                    <div class="feature-icon">
+                        <!-- <i class="fa fa-flask"></i> -->
+                        <i class="fa fa-vk"></i>
+                    </div> <!-- end feature-icon -->
+                    <h3 class="feature-heading">ВКонтакте</h3>
+                </div> <!-- end feature-item -->
+                <div class="feature-item col-sm-3" id="facebook-share-button">
+                    <div class="feature-icon">
+                        <!-- <i class="fa fa-heart"></i> -->
+                        <i class="fa fa-facebook"></i>
+                    </div> <!-- end feature-icon -->
+                    <h3 class="feature-heading">Facebook</h3>
+                </div> <!-- end feature-item -->
+                <div class="feature-item col-sm-3" id="gplus-share-button">
+                    <div class="feature-icon">
+                        <!-- <i class="fa fa-sun-o"></i> -->
+                        <i class="fa fa-google-plus"></i>
+                    </div> <!-- end feature-icon -->
+                    <h3 class="feature-heading">Google+</h3>
+                </div> <!-- end feature-item -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </div> <!-- end features -->
+
+
     <!-- CONTACT -->
     <div id="contact-link"></div>
     <div class="contact">
@@ -267,6 +302,10 @@
         </div> <!-- end container -->
     </div> <!-- end contact -->
     
+
+    
+
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">

@@ -60,7 +60,30 @@
 			myMap.geoObjects.add(placeObject);
 		}
 
+	});
 
+	var text = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию http://gto-util-map.azurewebsites.net/";
+	var title = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию ";
+	var url = "http://gto-util-map.azurewebsites.net/";
+
+	$('#twitter-share-button').click(function(event) {
+		var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + title;
+		window.open(shareUrl, 'newwindow', 'width=550, height=550');
+	});
+
+	$('#vk-share-button').click(function(event) {
+		var shareUrl = "http://vkontakte.ru/share.php?url=" + url;
+		window.open(shareUrl, 'newwindow', 'width=550, height=550');
+	});
+
+	$('#facebook-share-button').click(function(event) {
+		var shareUrl = "https://facebook.com/sharer.php?u=" + url;
+		window.open(shareUrl, 'newwindow', 'width=550, height=550');
+	});
+
+	$('#gplus-share-button').click(function(event) {
+		var shareUrl = "https://plus.google.com/share?url=" + url;
+		window.open(shareUrl, 'newwindow', 'width=550, height=550');
 	});
 
 	/* SMOOTH SCROLL */

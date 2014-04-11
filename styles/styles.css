@@ -517,6 +517,20 @@ accent {
     /*text-align: center;*/
 }
 
+.top-image {
+    left: -30px;
+    top: -100px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+
+@media all and (max-width: 1200px) {
+    .top-image-wrapper {
+        display: none;
+    }
+}
+
 /*
 COUNTDOWN STYLES
 */
@@ -556,4 +570,22 @@ COUNTDOWN STYLES
     #countdown h1 {
         font-size: 1.5em;
     }
+}
+
+
+/*SHARE STYLES*/
+
+.share {
+    background: #EC786C;
+    padding: 48px 24px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.share .feature-item {
+    cursor: pointer;
+}
+
+.share .feature-icon {
+    background: #e74c3c;
 }
