@@ -93,7 +93,7 @@
 	$('.nav-link').click(function(event) {
 		event.preventDefault();
 		$('html,body').animate({
-			scrollTop: $(this.hash).offset().top
+			scrollTop: $(this.hash).offset().top - $('.navbar').height()
 		}, 500);
 	});
 

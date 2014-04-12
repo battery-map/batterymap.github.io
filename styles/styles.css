@@ -55,7 +55,6 @@ a:focus {
 }
 #top, #features-link, #newsletter-link, #sections-link, #pricing-link, #gallery-link, #contact-link {
     position: relative;
-    top: -80px;
 }
 .alert {
     box-shadow: none;
