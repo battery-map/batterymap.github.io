@@ -180,7 +180,7 @@ MAIN
 */
 .background {
     /*1745 987*/
-    background: url('../images/back1.jpg') repeat center bottom;
+    background: url('../images/back2.jpg') repeat center bottom;
     background-size: cover;
     position: fixed;
     width: 100%;

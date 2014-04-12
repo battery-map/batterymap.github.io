@@ -62,9 +62,12 @@
 
 	});
 
-	var text = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию http://gto-util-map.azurewebsites.net/";
+	var http = location.protocol;
+	var slashes = http.concat("//");
+	var host = slashes.concat(window.location.hostname);
 	var title = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию ";
-	var url = "http://gto-util-map.azurewebsites.net/";
+	var url = host;
+	var imageUrl = host + "/images/BATTERY-angel-min.png";
 
 	$('#twitter-share-button').click(function(event) {
 		var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + title;
@@ -72,7 +75,7 @@
 	});
 
 	$('#vk-share-button').click(function(event) {
-		var shareUrl = "http://vkontakte.ru/share.php?url=" + url;
+		var shareUrl = "http://vkontakte.ru/share.php?url=" + url + "&image=" + imageUrl;
 		window.open(shareUrl, 'newwindow', 'width=550, height=550');
 	});
 
