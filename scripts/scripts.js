@@ -32,8 +32,8 @@
 			imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg'
 		}, {
 			coords: [58.003719, 56.295197],
-			header: 'Контейнер для сбора у подъезда',
-			text: 'Первый подъезд',
+			header: 'Контейнер у сада соловьев',
+			text: '<a href="https://vk.com/uinka" target="_blank">https://vk.com/uinka</a><br>Первый подъезд дома',
 			address: 'улица Аркадия Гайдара, 3',
 			schedule: 'Круглосуточно',
 			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg'

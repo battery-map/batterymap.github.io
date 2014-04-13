@@ -504,7 +504,20 @@ CUSTOM STYLES
 */
 
 accent {
-    color: #e74c3c;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+
+    line-height: 38px;
+    font-size: 1em;
+
+    text-align: center;
+    display: inline-block;
+    background: #e74c3c;
+    border-radius: 100%;
+    margin: 0 8px;
+    margin-top: 5px;
+    transition: .25s;
 }
 
 .map_baloon_image {
