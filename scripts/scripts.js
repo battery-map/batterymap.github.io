@@ -18,11 +18,11 @@
 			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg'
 		}, {
 			coords: [57.994357, 56.238606],
-			header: 'Социокультурный фонд "Нанук"',
-			text: 'Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
+			header: 'Экоцентр "Нанук"',
+			text: '<a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
 			address: 'улица Елькина, 45',
 			schedule: 'По будням, с 9 до 21 ч.',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/83/c1/fd/f6/83c1fdf6_resizedScaled_659to439.jpg'
+			imageUrl: 'https://pp.vk.me/c607422/v607422629/4af3/GCbPDslaT5E.jpg'
 		}, {
 			coords: [58.008507, 56.287343],
 			header: 'Пермский Центр природного земледелия "Сияние"',
