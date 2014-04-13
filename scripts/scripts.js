@@ -64,7 +64,7 @@
 				properties: {
 					hintContent: placeInfo.header,
 					balloonContentHeader: placeInfo.header,
-					balloonContentBody: placeInfo.text + '<br>' + placeInfo.address + '<br>' + placeInfo.schedule,
+					balloonContentBody: placeInfo.address + '<br>' + placeInfo.text + '<br>' + placeInfo.schedule,
 					balloonContentFooter: (placeInfo.imageUrl) ? '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />' : ''
 				}
 			}, {
