@@ -4,7 +4,7 @@
 	/* YandexMaps */
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('YMapsID', {
-			center: [58.002741, 56.254059],
+			center: [58.021918, 56.226271],
 			zoom: 12,
 			controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
 		});
@@ -37,6 +37,20 @@
 			address: 'улица Аркадия Гайдара, 3',
 			schedule: 'Круглосуточно',
 			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg'
+		}, {
+			coords: [58.056497, 56.212455],
+			header: 'Кафедра Защиты Окружающей среды ПНИПУ',
+			text: '',
+			address: 'улица Профессора Поздеева, 6',
+			schedule: '',
+			imageUrl: ''
+		}, {
+			coords: [57.982336, 56.193053],
+			header: 'Общежитие №3',
+			text: '',
+			address: 'улица 9 Мая, 13',
+			schedule: '',
+			imageUrl: ''
 		}];
 
 		for (var index = 0; index < placemarks.length; index++) {
@@ -51,7 +65,7 @@
 					hintContent: placeInfo.header,
 					balloonContentHeader: placeInfo.header,
 					balloonContentBody: placeInfo.text + '<br>' + placeInfo.schedule,
-					balloonContentFooter: '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />'
+					balloonContentFooter: (placeInfo.imageUrl) ? '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />' : ''
 				}
 			}, {
 				preset: "twirl#yellowDotIcon"
