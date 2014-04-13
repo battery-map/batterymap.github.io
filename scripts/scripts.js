@@ -38,10 +38,10 @@
 			schedule: 'Круглосуточно',
 			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg'
 		}, {
-			coords: [58.056497, 56.212455],
-			header: 'Кафедра Защиты Окружающей среды ПНИПУ',
+			coords: [58.056934, 56.226106],
+			header: 'Кафедра «Охрана окружающей среды» ПНИПУ',
 			text: '',
-			address: 'улица Профессора Поздеева, 6',
+			address: 'улица Профессора Поздеева, 14',
 			schedule: '',
 			imageUrl: ''
 		}, {
