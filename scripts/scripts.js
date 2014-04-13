@@ -51,6 +51,13 @@
 			address: 'улица 9 Мая, 13',
 			schedule: '',
 			imageUrl: ''
+		}, {
+			coords: [58.000950, 56.221158],
+			header: 'Языковой центр "Диалог"',
+			text: 'Необходимо предварительно позвонить: 288-05-33 Мария',
+			address: 'улица Крылова, 4',
+			schedule: 'Часы работы: 10.00 - 20.00',
+			imageUrl: ''
 		}];
 
 		for (var index = 0; index < placemarks.length; index++) {
