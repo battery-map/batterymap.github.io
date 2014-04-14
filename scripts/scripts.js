@@ -15,7 +15,8 @@
 			text: 'Семиэтажный геолого-географический корпус. Рядом находится фонтан<br>Аудитория 208',
 			schedule: 'По будням с 9 до 19 ч. (тел. 239-62-42)',
 			address: 'улица Генкеля, 8',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg'
+			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg',
+			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
 		}, {
 			coords: [57.994357, 56.238606],
 			header: 'Благотворительный Экологический Фонд "Обитаемый Урал" совместно с Фондом "Нанук"',
@@ -29,14 +30,16 @@
 			text: 'Цокольный этаж, вход с ул. Макаренко.',
 			address: 'улица Макаренко 50 / улица Крупской, 61',
 			schedule: 'По будням, с 9 до 21 ч.',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg'
+			imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg',
+			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
 		}, {
 			coords: [58.003719, 56.295197],
 			header: 'Контейнер у сада соловьев',
 			text: '<a href="https://vk.com/uinka" target="_blank">https://vk.com/uinka</a><br>Первый подъезд дома',
 			address: 'улица Аркадия Гайдара, 3',
 			schedule: 'Круглосуточно',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg'
+			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg',
+			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
 		}, {
 			coords: [58.056934, 56.226106],
 			header: 'Кафедра «Охрана окружающей среды» ПНИПУ',
@@ -63,7 +66,7 @@
 		for (var index = 0; index < placemarks.length; index++) {
 			var placeInfo = placemarks[index];
 
-			var placeObject = new ymaps.GeoObject({
+			var options = {
 				geometry: {
 					type: "Point",
 					coordinates: placeInfo.coords
@@ -74,7 +77,13 @@
 					balloonContentBody: placeInfo.address + '<br>' + placeInfo.text + '<br>' + placeInfo.schedule,
 					balloonContentFooter: (placeInfo.imageUrl) ? '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />' : ''
 				}
-			}, {
+			};
+
+			if (placeInfo.footerText) {
+				options.properties.balloonContentFooter += '<br>' + placeInfo.footerText;
+			}
+
+			var placeObject = new ymaps.GeoObject(options, {
 				preset: "twirl#yellowDotIcon"
 			});
 
