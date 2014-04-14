@@ -140,7 +140,7 @@ HEADER
 }
 .navbar-nav>li>a {
     line-height: 50px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .navbar-default .navbar-nav>li>a {
     color: #ecf0f1;
@@ -525,8 +525,9 @@ accent {
     height: auto;
 }
 
-.feature-section {
-    /*text-align: center;*/
+.social-icon span{
+    font-size: 0.7em;
+    font-family: 'Roboto', 'Lato', sans-serif;
 }
 
 .top-image {
@@ -535,6 +536,11 @@ accent {
     height: 400px;
     position: absolute;
     z-index: -1;
+}
+
+.nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media all and (max-width: 1200px) {
