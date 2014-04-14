@@ -555,7 +555,6 @@ accent {
     .navbar-header a {
         font-size: 0;
     }
-
 }
 
 @media all and (max-width: 770px) {
@@ -588,6 +587,13 @@ accent {
         line-height: 20px;
     }
 }
+
+@media all and (max-width: 420px) {
+    .navbar-header a {
+        font-size: 0;
+    }
+}
+
 
 /*
 COUNTDOWN STYLES

@@ -129,6 +129,9 @@
 		$('.background').css('top', -(scrolled * 0.5) + 'px');
 	}
 	$(window).scroll(function(e) {
+		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+			return;
+		}
 		parallax();
 	});
 
