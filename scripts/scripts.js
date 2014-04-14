@@ -19,7 +19,7 @@
 		}, {
 			coords: [57.994357, 56.238606],
 			header: 'Благотворительный Экологический Фонд "Обитаемый Урал" совместно с Фондом "Нанук"',
-			text: '<a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
+			text: '<a href="https://vk.com/ecour" target="_blank">https://vk.com/ecour</a><br><a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
 			address: 'улица Елькина, 45',
 			schedule: 'По будням, с 9 до 21 ч.',
 			imageUrl: 'https://pp.vk.me/c607422/v607422629/4af3/GCbPDslaT5E.jpg'
