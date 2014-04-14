@@ -18,7 +18,7 @@
 			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg'
 		}, {
 			coords: [57.994357, 56.238606],
-			header: 'Экоцентр "Нанук"',
+			header: 'Благотворительный Экологический Фонд "Обитаемый Урал" совместно с Фондом "Нанук"',
 			text: '<a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
 			address: 'улица Елькина, 45',
 			schedule: 'По будням, с 9 до 21 ч.',
