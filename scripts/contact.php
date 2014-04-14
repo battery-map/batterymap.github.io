@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['contactname']) && !empty($_POST['contactemail']) && !empty($_POST['contactmessage'])) {
-		$to = 'gigabytetheone@gmail.com, lilyvitamin@gmail.com'; // Replace with your email.
+		$to = 'gigabytetheone@gmail.com'; // Replace with your email.
 		$body = "Имя: {$_POST['contactname']}\n\nEmail: {$_POST['contactemail']}\n\nСообщение:\n {$_POST['contactmessage']}";
 	
 		$url = 'https://api.sendgrid.com/api/mail.send.json';
@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		  'api_user' => $user,
 		  'api_key' => $pass,
 		  'to' => $to,
+		  'bcc' => 'lilyvitamin@gmail.com',
 		  'subject' => "Форма обратной связи battery-map.ru",
 		  'text' => $body,
 		  'from' => 'info@battery-map.ru',
