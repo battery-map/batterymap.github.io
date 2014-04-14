@@ -110,6 +110,11 @@
 		window.open(shareUrl, 'newwindow', 'width=550, height=550');
 	});
 
+	/* Yandex events */
+	$("[data-yandex-event]").click(function() {
+		window.yaCounter24634694.reachGoal(this.getAttribute("data-yandex-event"));
+	});
+
 	/* SMOOTH SCROLL */
 	$('.nav-link').click(function(event) {
 		event.preventDefault();
