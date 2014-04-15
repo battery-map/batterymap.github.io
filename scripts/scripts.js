@@ -10,58 +10,81 @@
 		});
 
 		var placemarks = [{
-			coords: [58.0080, 56.186129],
-			header: 'Корпус №8 Пермского университета ПГНИУ',
-			text: 'Семиэтажный геолого-географический корпус. Рядом находится фонтан<br>Аудитория 208',
-			schedule: 'По будням с 9 до 19 ч. (тел. 239-62-42)',
-			address: 'улица Генкеля, 8',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg',
-			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
-		}, {
-			coords: [57.994357, 56.238606],
-			header: 'Благотворительный Экологический Фонд "Обитаемый Урал" совместно с Фондом "Нанук"',
-			text: '<a href="https://vk.com/ecour" target="_blank">https://vk.com/ecour</a><br><a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
-			address: 'улица Елькина, 45',
-			schedule: 'По будням, с 9 до 21 ч.',
-			imageUrl: 'https://pp.vk.me/c607422/v607422629/4af3/GCbPDslaT5E.jpg'
-		}, {
-			coords: [58.008507, 56.287343],
-			header: 'Пермский Центр природного земледелия "Сияние"',
-			text: 'Цокольный этаж, вход с ул. Макаренко.',
-			address: 'улица Макаренко 50 / улица Крупской, 61',
-			schedule: 'По будням, с 9 до 21 ч.',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg',
-			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
-		}, {
-			coords: [58.003719, 56.295197],
-			header: 'Контейнер у сада соловьев',
-			text: '<a href="https://vk.com/uinka" target="_blank">https://vk.com/uinka</a><br>Первый подъезд дома',
-			address: 'улица Аркадия Гайдара, 3',
-			schedule: 'Круглосуточно',
-			imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg',
-			footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
-		}, {
-			coords: [58.056934, 56.226106],
-			header: 'Кафедра «Охрана окружающей среды» ПНИПУ',
-			text: '',
-			address: 'улица Профессора Поздеева, 14',
-			schedule: '',
-			imageUrl: ''
-		}, {
-			coords: [57.982336, 56.193053],
-			header: 'Общежитие №3',
-			text: '',
-			address: 'улица 9 Мая, 13',
-			schedule: '',
-			imageUrl: ''
-		}, {
+				coords: [58.0080, 56.186129],
+				header: 'Корпус №8 Пермского университета ПГНИУ',
+				text: 'Семиэтажный геолого-географический корпус. Рядом находится фонтан<br>Аудитория 208',
+				schedule: 'По будням с 9 до 19 ч. (тел. 239-62-42)',
+				address: 'улица Генкеля, 8',
+				imageUrl: 'http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg',
+				footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
+			}, {
+				coords: [57.994357, 56.238606],
+				header: 'Благотворительный Экологический Фонд "Обитаемый Урал" совместно с Фондом "Нанук"',
+				text: '<a href="https://vk.com/ecour" target="_blank">https://vk.com/ecour</a><br><a href="https://vk.com/ethnoecocentr" target="_blank">https://vk.com/ethnoecocentr</a><br>Также cюда вы можете принести пластик, стекло, металл и макулатуру.',
+				address: 'улица Елькина, 45',
+				schedule: 'По будням, с 9 до 21 ч.',
+				imageUrl: 'https://pp.vk.me/c607422/v607422629/4af3/GCbPDslaT5E.jpg'
+			}, {
+				coords: [58.008507, 56.287343],
+				header: 'Пермский Центр природного земледелия "Сияние"',
+				text: 'Цокольный этаж, вход с ул. Макаренко.',
+				address: 'улица Макаренко 50 / улица Крупской, 61',
+				schedule: 'По будням, с 9 до 21 ч.',
+				imageUrl: 'http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg',
+				footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
+			}, {
+				coords: [58.003719, 56.295197],
+				header: 'Контейнер у сада соловьев',
+				text: '<a href="https://vk.com/uinka" target="_blank">https://vk.com/uinka</a><br>Первый подъезд дома',
+				address: 'улица Аркадия Гайдара, 3',
+				schedule: 'Круглосуточно',
+				imageUrl: 'http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg',
+				footerText: '<a href="http://properm.ru/news/society/78466/" target="_blank">Фото © http://properm.ru/news/society/78466/</a>'
+			}, {
+				coords: [58.056934, 56.226106],
+				header: 'Кафедра «Охрана окружающей среды» ПНИПУ',
+				text: '',
+				address: 'улица Профессора Поздеева, 14',
+				schedule: '',
+				imageUrl: ''
+			}, {
+				coords: [57.982336, 56.193053],
+				header: 'Общежитие №3',
+				text: '',
+				address: 'улица 9 Мая, 13',
+				schedule: '',
+				imageUrl: ''
+			}, {
+				coords: [58.000950, 56.221158],
+				header: 'Языковой центр "Диалог"',
+				text: 'Необходимо предварительно позвонить: 288-05-33 Мария',
+				address: 'улица Крылова, 4',
+				schedule: 'Часы работы: 10.00 - 20.00',
+				imageUrl: ''
+			}, {
+				coords: [58.017181, 56.242511],
+				header: 'Подъезд дома №2',
+				text: '',
+				address: 'Сибирская улица, 1',
+				schedule: 'Круглосуточно',
+				imageUrl: ''
+			}, {
+				coords: [58.005938, 56.195919],
+				header: 'Общежитие №6 ПГНИУ',
+				text: 'Холл общежития перед проходной',
+				address: 'Петропавловская улица, 117',
+				schedule: 'Часы работы: 6.00 - 24.00',
+				imageUrl: 'images/photos/IMG_0788.jpg'
+			}
+			/*, {
 			coords: [58.000950, 56.221158],
-			header: 'Языковой центр "Диалог"',
-			text: 'Необходимо предварительно позвонить: 288-05-33 Мария',
-			address: 'улица Крылова, 4',
-			schedule: 'Часы работы: 10.00 - 20.00',
+			header: 'Подъезд дома №?',
+			text: '',
+			address: 'Сергинская улица, 38а',
+			schedule: 'Круглосуточно',
 			imageUrl: ''
-		}];
+		}*/
+		];
 
 		for (var index = 0; index < placemarks.length; index++) {
 			var placeInfo = placemarks[index];
@@ -95,7 +118,7 @@
 	var http = location.protocol;
 	var slashes = http.concat("//");
 	var host = slashes.concat(window.location.hostname);
-	var title = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию ";
+	var title = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию";
 	var url = host;
 	var imageUrl = host + "/images/BATTERY-angel-min.png";
 
