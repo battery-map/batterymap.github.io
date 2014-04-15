@@ -348,8 +348,9 @@ GALLERY
 .grid li {
 	display: inline-block;
 	width: 25%;
+    max-width: 200px;
 	margin: 0;
-	padding: 12px;
+	padding: 24px;
 	position: relative;
 }
 .grid figure {
@@ -380,6 +381,7 @@ GALLERY
 	top: auto;
 	bottom: 0;
 	opacity: 0;
+    font-size: 0.9em;
 	-webkit-transform: translateY(100%);
 	-moz-transform: translateY(100%);
 	-ms-transform: translateY(100%);
@@ -405,6 +407,7 @@ GALLERY
 .grid figcaption h3 {
     margin: 0;
     margin-bottom: 12px;
+    
 }
 .grid figcaption a {
     display: block;
@@ -466,9 +469,21 @@ FOOTER
 /*
 MEDIA QUERIES
 */
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1025px) {
     #newsletter-form {
         width: 75%;
+    }
+
+    .grid figcaption {
+        font-size: 0.7em;
+    }
+
+    .grid figcaption h3 {
+        font-size: 1.1em;   
+    }
+
+    .grid li {
+        width: 25%;
     }
 }
 @media all and (max-width: 768px) {
@@ -494,8 +509,15 @@ MEDIA QUERIES
     .best-deal {
         margin-top: 0;
     }
+
+    .grid figcaption {
+        font-size: 1em;
+    }
+    .grid figcaption h3 {
+        font-size: 1.1em;   
+    }
     .grid li {
-        width: 100%;
+        width: 50%;
     }
 }
 
