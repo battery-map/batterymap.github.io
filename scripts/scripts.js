@@ -147,7 +147,7 @@
 	var host = slashes.concat(window.location.hostname);
 	var title = "Не выбрасывай батарейку! Узнай где можно сдать её в утилизацию";
 	var url = host;
-	var imageUrl = host + "/images/BATTERY-angel-min.png";
+	var imageUrl = host + "/images/battery_logo_min.png";
 
 	$('#twitter-share-button').click(function(event) {
 		var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + title;
