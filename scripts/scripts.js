@@ -5,7 +5,7 @@
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('YMapsID', {
 			center: [58.021918, 56.226271],
-			zoom: 12,
+			zoom: 11.5,
 			controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
 		});
 
@@ -79,6 +79,15 @@
 				schedule: 'Часы работы: 6.00 - 24.00',
 				imageUrl: 'images/photos/IMG_0788.jpg'
 			}
+			/*Нужно фото
+			, {
+				coords: [57.962548, 56.178893],
+				header: 'Магазин ярких вещей CARROT',
+				text: '',
+				address: 'улица Космонавта Леонова, 68',
+				schedule: 'Часы работы: Понедельник–суббота — 11:00–20:00<br>Воскресенье — 11:00–18:00',
+				imageUrl: ''
+			}*/
 			/*, {
 			coords: [58.000950, 56.221158],
 			header: 'Подъезд дома №?',
@@ -89,33 +98,48 @@
 		}*/
 		];
 
+		var http = location.protocol;
+		var slashes = http.concat("//");
+		var host = slashes.concat(window.location.host);
+		var iconImageHref = host + '/images/battery_map_icon.png';
 		for (var index = 0; index < placemarks.length; index++) {
 			var placeInfo = placemarks[index];
 
-			var options = {
-				geometry: {
-					type: "Point",
-					coordinates: placeInfo.coords
-				},
-				properties: {
-					hintContent: placeInfo.header,
-					balloonContentHeader: placeInfo.header,
-					balloonContentBody: placeInfo.address + '<br>' + placeInfo.text + '<br>' + placeInfo.schedule,
-					balloonContentFooter: (placeInfo.imageUrl) ? '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" />' : ''
-				}
-			};
+			var html = "";
 
+			if (placeInfo.header) {
+				html += "<strong>" + placeInfo.header + "</strong><br>";
+			}
+			if (placeInfo.address) {
+				html += placeInfo.address + "<br>";
+			}
+			if (placeInfo.text) {
+				html += placeInfo.text + "<br>";
+			}
+			if (placeInfo.schedule) {
+				html += placeInfo.schedule + "<br>";
+			}
+			if (placeInfo.imageUrl) {
+				html += '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" /><br>';
+			}
 			if (placeInfo.footerText) {
-				options.properties.balloonContentFooter += '<br>' + placeInfo.footerText;
+				html += placeInfo.footerText;
 			}
 
-			var placeObject = new ymaps.GeoObject(options, {
-				preset: "twirl#yellowDotIcon"
+			var myPlacemark = new ymaps.Placemark(placeInfo.coords, {
+				hintContent: placeInfo.header,
+				balloonContentBody: html,
+
+			}, {
+				// preset: 'islands#redDotIcon'
+				iconLayout: 'default#image',
+				iconImageHref: iconImageHref,
+				iconImageSize: [40, 53],
+				iconImageOffset: [-20, -42]
 			});
 
-			myMap.geoObjects.add(placeObject);
+			myMap.geoObjects.add(myPlacemark);
 		}
-
 	});
 
 	var http = location.protocol;

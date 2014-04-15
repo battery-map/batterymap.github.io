@@ -554,7 +554,7 @@ accent {
 
 .top-image {
     left: -30px;
-    top: -100px;
+    top: -60px;
     height: 400px;
     position: absolute;
     z-index: -1;
@@ -565,9 +565,20 @@ accent {
     padding-right: 10px;
 }
 
-@media all and (max-width: 1200px) {
+.nav-icon i {
+    font-size: 1.8em;
+}
+
+@media all and (max-width: 1000px) {
     .top-image-wrapper {
         display: none;
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+    .top-image {
+        left: -90px;
     }
 
     .navbar-header a {
