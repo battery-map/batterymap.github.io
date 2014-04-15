@@ -70,7 +70,7 @@
 				text: '',
 				address: 'Сибирская улица, 1',
 				schedule: 'Круглосуточно',
-				imageUrl: ''
+				imageUrl: 'images/photos/PIC002686.jpg'
 			}, {
 				coords: [58.005938, 56.195919],
 				header: 'Общежитие №6 ПГНИУ',
