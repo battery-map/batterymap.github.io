@@ -78,6 +78,12 @@
 				address: 'Петропавловская улица, 117',
 				schedule: 'Часы работы: 6.00 - 24.00',
 				imageUrl: 'images/photos/IMG_0788.jpg'
+			}, {
+				coords: [57.984906, 56.203982],
+				header: 'Центр детского творчества "Сигнал"',
+				text: '<a href="https://vk.com/signal_perm" target="_blank">https://vk.com/signal_perm</a><br>',
+				address: 'улица Мира, 8а',
+				schedule: ''
 			}
 			/*Нужно фото
 			, {
