@@ -84,6 +84,13 @@
 				text: '<a href="https://vk.com/signal_perm" target="_blank">https://vk.com/signal_perm</a><br>',
 				address: 'улица Мира, 8а',
 				schedule: ''
+			}, {
+				coords: [58.006284, 56.207138],
+				header: 'Хостел П',
+				text: '<a href="https://vk.com/hostelp" target="_blank">https://vk.com/hostelp</a>',
+				address: 'улица Ленина, 67',
+				schedule: 'Круглосуточно, обращаться к администратору',
+				imageUrl: 'images/photos/aZZXBeUtLvw.jpg'
 			}
 			/*Нужно фото
 			, {
