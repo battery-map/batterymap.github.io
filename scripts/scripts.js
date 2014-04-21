@@ -163,7 +163,7 @@
 	var imageUrl = host + "/images/battery_logo_vk.png";
 
 	$('#twitter-share-button').click(function(event) {
-		var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + title;
+		var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + title + " #batterymap";
 		window.open(shareUrl, 'newwindow', 'width=550, height=550');
 	});
 
