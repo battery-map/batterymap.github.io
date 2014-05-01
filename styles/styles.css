@@ -543,8 +543,9 @@ accent {
 }
 
 .map_baloon_image {
-    width: 300px;
+    max-width: 300px;
     height: auto;
+    max-height: 300px;
 }
 
 .social-icon span{

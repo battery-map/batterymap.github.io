@@ -1,6 +1,8 @@
 (function($) {
 	"use strict";
 
+	hs.graphicsDir = '/scripts/highslide_graphics/';
+
 	/* YandexMaps */
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('YMapsID', {
@@ -63,7 +65,7 @@
 				text: 'Необходимо предварительно позвонить: 288-05-33 Мария',
 				address: 'улица Крылова, 4',
 				schedule: 'Часы работы: 9.00-18.00',
-				imageUrl: 'images/photos/iRTHMuHo7zE.jpg'
+				imageUrl: 'https://pp.vk.me/c617216/v617216986/719f/iRTHMuHo7zE.jpg'
 			}, {
 				coords: [58.017181, 56.242511],
 				header: 'Подъезд №2',
@@ -90,7 +92,7 @@
 				text: '<a href="https://vk.com/hostelp" target="_blank">https://vk.com/hostelp</a>',
 				address: 'улица Ленина, 67',
 				schedule: 'Круглосуточно, обращаться к администратору',
-				imageUrl: 'images/photos/aZZXBeUtLvw.jpg'
+				imageUrl: 'https://pp.vk.me/c605626/v605626386/7320/qxS6P14k62M.jpg'
 			}, {
 				coords: [57.989236, 56.253743],
 				header: 'Прокат туристического снаряжения "Рассвет Пармы"',
@@ -98,7 +100,16 @@
 				address: 'Комсомольский проспект, 90',
 				schedule: 'Часы работы:<br>Суббота, воскресенье: 09:00–21:00<br>Будние дни 12:00–20:00',
 				imageUrl: 'images/photos/DSC_3857.JPG'
+			}, {
+				coords: [57.974286, 56.165896],
+				header: 'Гимназия №1, каб №31',
+				text: '',
+				address: 'улица Космонавта Леонова, 14',
+				schedule: '',
+				imageUrl: 'https://pp.vk.me/c618118/v618118835/3afd/KAwUchXnnD4.jpg'
 			}
+
+
 
 			/*, {
 				coords: [],
@@ -150,7 +161,11 @@
 				html += placeInfo.schedule + "<br>";
 			}
 			if (placeInfo.imageUrl) {
-				html += '<img class="map_baloon_image" src="' + placeInfo.imageUrl + '" /><br>';
+				var id = 'mapImage' + index;
+				html += '<a href="' + placeInfo.imageUrl + '" class="highslide" onclick="return hs.expand(this)">' +
+					'<img class="map_baloon_image highslide" id="' + id + '" src="' + placeInfo.imageUrl + '" />' +
+					'</a>' +
+					'<br>';
 			}
 			if (placeInfo.footerText) {
 				html += placeInfo.footerText;
