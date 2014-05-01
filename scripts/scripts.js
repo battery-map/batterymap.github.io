@@ -229,13 +229,13 @@
 
 	/* BACKGROUND PARALLAX */
 	function parallax() {
+		if ($(window).width() < 500) {
+			return;
+		}
 		var scrolled = $(window).scrollTop();
 		$('.background').css('top', -(scrolled * 0.5) + 'px');
 	}
 	$(window).scroll(function(e) {
-		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-			return;
-		}
 		parallax();
 	});
 
