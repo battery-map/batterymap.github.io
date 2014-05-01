@@ -161,9 +161,9 @@ HEADER
     border: none;
     background: #1abc9c;
     color: #ecf0f1;
-    line-height: 50px;
-    width: 68px;
-    font-size: 3em;
+    line-height: 22px;
+    width: 40px;
+    font-size: 1.5em;
     transition: .25s;
 }
 .navbar-default .navbar-toggle:focus {
@@ -183,8 +183,8 @@ MAIN
     background-size: cover;
     position: fixed;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 110%;
+    bottom: 0;
     left: 0;
     z-index: -1;
 }
@@ -517,7 +517,7 @@ MEDIA QUERIES
         font-size: 1.1em;   
     }
     .grid li {
-        width: 50%;
+        width: 200px;
     }
 }
 
@@ -591,16 +591,20 @@ accent {
     }
 }
 
-@media all and (max-width: 1000px) and (min-width: 770px) {
+@media all and (max-width: 1000px) and (min-width: 769px) {
     .navbar-header a {
         font-size: 0;
     }
 }
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 769px) {
     .navbar-header a {
         font-size: 1.1em;
     }
+    .navbar-header img {
+        height: 30px;
+    }
+
 
     .animated {
         /*CSS transitions*/
@@ -630,7 +634,7 @@ accent {
 
 @media all and (max-width: 420px) {
     .navbar-header a {
-        font-size: 0;
+        font-size: 0.8em;
     }
 }
 

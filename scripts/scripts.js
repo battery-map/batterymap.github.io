@@ -229,14 +229,13 @@
 
 	/* BACKGROUND PARALLAX */
 	function parallax() {
-		if ($(window).width() < 500) {
-			return;
-		}
 		var scrolled = $(window).scrollTop();
 		$('.background').css('top', -(scrolled * 0.5) + 'px');
 	}
 	$(window).scroll(function(e) {
-		parallax();
+		if ($(window).width() > 500) {
+			parallax();
+		}
 	});
 
 	/* FlexSlider */
@@ -279,86 +278,88 @@
 		return false;
 	});
 
-	/* ANIMATIONS */
-	$('.navbar-brand').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInLeft');
-		}
-	});
-	$('.navbar-nav a').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInRight');
-		}
-	});
-	$('.main').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInUp');
-		}
-	});
-	$('.feature-item').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInUp');
-		}
-	});
-	$('.heading').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInDown');
-		}
-	});
-	$('#newsletter-form').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated bounceIn');
-		}
-	});
-	$('.feature-section-left').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInLeft');
-		}
-	});
-	$('.feature-section-right').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInRight');
-		}
-	});
-	$('.pricing-table').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInUp');
-		}
-	});
-	$('.pricing-table').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInUp');
-		}
-	});
-	$('.grid li').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeIn');
-		}
-	});
-	$('.contact-infos').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInLeft');
-		}
-	});
-	$('#contact-form').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInRight');
-		}
-	});
-	$('.copyright').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInLeft');
-		}
-	});
-	$('.footer-middle').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated bounceIn');
-		}
-	});
-	$('.social-icons').bind('inview', function(event, visible) {
-		if (visible === true) {
-			$(this).addClass('animated fadeInRight');
-		}
-	});
+	if ($(window).width() > 500) {
+		/* ANIMATIONS */
+		$('.navbar-brand').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInLeft');
+			}
+		});
+		$('.navbar-nav a').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInRight');
+			}
+		});
+		$('.main').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInUp');
+			}
+		});
+		$('.feature-item').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInUp');
+			}
+		});
+		$('.heading').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInDown');
+			}
+		});
+		$('#newsletter-form').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated bounceIn');
+			}
+		});
+		$('.feature-section-left').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInLeft');
+			}
+		});
+		$('.feature-section-right').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInRight');
+			}
+		});
+		$('.pricing-table').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInUp');
+			}
+		});
+		$('.pricing-table').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInUp');
+			}
+		});
+		$('.grid li').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeIn');
+			}
+		});
+		$('.contact-infos').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInLeft');
+			}
+		});
+		$('#contact-form').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInRight');
+			}
+		});
+		$('.copyright').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInLeft');
+			}
+		});
+		$('.footer-middle').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated bounceIn');
+			}
+		});
+		$('.social-icons').bind('inview', function(event, visible) {
+			if (visible === true) {
+				$(this).addClass('animated fadeInRight');
+			}
+		});
+	}
 
 })(jQuery);
