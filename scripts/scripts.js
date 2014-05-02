@@ -72,14 +72,14 @@
 				text: '',
 				address: 'Сибирская улица, 1',
 				schedule: 'Круглосуточно',
-				imageUrl: 'images/photos/PIC002686.jpg'
+				imageUrl: 'https://pp.vk.me/c608416/v608416637/6390/9SQdA3VqEe8.jpg'
 			}, {
 				coords: [58.005938, 56.195919],
 				header: 'Общежитие №6 ПГНИУ',
 				text: 'Холл общежития перед проходной',
 				address: 'Петропавловская улица, 117',
 				schedule: 'Часы работы: 6.00 - 24.00',
-				imageUrl: 'images/photos/IMG_0788.jpg'
+				imageUrl: 'https://pp.vk.me/c608416/v608416637/6399/XeGA-wcTpuw.jpg'
 			}, {
 				coords: [57.984906, 56.203982],
 				header: 'Центр детского творчества "Сигнал"',
@@ -99,7 +99,7 @@
 				text: 'Вход с торца',
 				address: 'Комсомольский проспект, 90',
 				schedule: 'Часы работы:<br>Суббота, воскресенье: 09:00–21:00<br>Будние дни 12:00–20:00',
-				imageUrl: 'images/photos/DSC_3857.JPG'
+				imageUrl: 'https://pp.vk.me/c608416/v608416637/6565/sYwOgpst-Kc.jpg'
 			}, {
 				coords: [57.974286, 56.165896],
 				header: 'Гимназия №1, каб №31',
@@ -113,7 +113,7 @@
 				text: '',
 				address: 'улица Вильямса, 41',
 				schedule: 'Часы работы:<br>Будни 10.00-20.00<br>Выходные и праздничные дни 10.00-19.00',
-				imageUrl: 'images/photos/GREENLY.JPG'
+				imageUrl: 'https://pp.vk.me/c620827/v620827637/4eda/LAydytbdwtM.jpg'
 			}, {
 				coords: [57.988503, 56.206241],
 				header: 'Магазин игрушек "Маугли"',
