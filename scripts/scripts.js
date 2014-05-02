@@ -6,8 +6,8 @@
 	/* YandexMaps */
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('YMapsID', {
-			center: [58.021918, 56.226271],
-			zoom: 11.5,
+			center: [58.037918, 56.226271],
+			zoom: 11,
 			controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
 		});
 
@@ -107,6 +107,20 @@
 				address: 'улица Космонавта Леонова, 14',
 				schedule: '',
 				imageUrl: 'https://pp.vk.me/c618118/v618118835/3afd/KAwUchXnnD4.jpg'
+			}, {
+				coords: [58.104306, 56.300996],
+				header: 'Отдел экотоваров "GREENLY"',
+				text: '',
+				address: 'улица Вильямса, 41',
+				schedule: 'Часы работы:<br>Будни 10.00-20.00<br>Выходные и праздничные дни 10.00-19.00',
+				imageUrl: 'images/photos/GREENLY.JPG'
+			}, {
+				coords: [57.988503, 56.206241],
+				header: 'Магазин игрушек "Маугли"',
+				text: '',
+				address: 'Стахановская улица, 54, корпус П',
+				schedule: 'Часы работы:<br>Понедельник — Пятница с 9.00 до 20.00<br>Суббота — с 10.00 до 18.00<br>Воскресенье — с 10 до 16.00',
+				imageUrl: 'https://pp.vk.me/c620827/v620827637/4ee3/rJODAQC_rxY.jpg'
 			}
 
 
@@ -129,14 +143,6 @@
 				schedule: 'Часы работы: Понедельник–суббота — 11:00–20:00<br>Воскресенье — 11:00–18:00',
 				imageUrl: ''
 			}*/
-			/*, {
-			coords: [58.000950, 56.221158],
-			header: 'Подъезд дома №?',
-			text: '',
-			address: 'Сергинская улица, 38а',
-			schedule: 'Круглосуточно',
-			imageUrl: ''
-		}*/
 		];
 
 		var http = location.protocol;
