@@ -217,6 +217,9 @@ FEATURES
     padding-bottom: 24px;
     text-align: center;
 }
+.features a {
+    color: #ecf0f1;
+}
 .features .lead {
     margin-bottom: 48px;
 }
@@ -233,6 +236,20 @@ FEATURES
     border-radius: 100%;
     transition: .5s;
 }
+.feature-image {
+    display: inline-block;
+    background: #16a085;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    transition: .5s;
+    padding: 10px;
+}
+.feature-image img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .feature-item:hover .feature-icon {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -593,13 +610,13 @@ accent {
     }
 }
 
-@media all and (max-width: 1000px) and (min-width: 769px) {
+@media all and (max-width: 1000px) and (min-width: 767px) {
     .navbar-header a {
         font-size: 0;
     }
 }
 
-@media all and (max-width: 769px) {
+@media all and (max-width: 767px) {
     .navbar-header a {
         font-size: 1.1em;
     }
