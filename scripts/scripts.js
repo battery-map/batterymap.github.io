@@ -10,6 +10,7 @@
 			zoom: 11,
 			controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
 		});
+		myMap.behaviors.disable('scrollZoom');
 
 		var placemarks = [{
 				coords: [58.0080, 56.186129],
