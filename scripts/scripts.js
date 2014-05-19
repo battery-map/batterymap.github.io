@@ -129,9 +129,14 @@
 				address: 'улица Букирева, 10а',
 				schedule: '',
 				imageUrl: 'https://pp.vk.me/c614727/v614727637/d3ac/tkfSvN-4DjY.jpg'
+			}, {
+				coords: [58.014496, 56.222648],
+				header: 'Велосервис, подготовка лыж и сноубордов "ТАНДЕМ"',
+				text: '<a href="https://vk.com/tandemperm" target="_blank">https://vk.com/tandemperm</a>',
+				address: 'улица Окулова, 18',
+				schedule: 'Часы работы:<br>ПН-ПТ 10:00 - 20:00<br>СБ-ВС 10:00 - 20:00',
+				imageUrl: 'https://pp.vk.me/c614727/v614727637/d3da/gfBNJHZK1wI.jpg'
 			}
-
-
 
 			/*
 			, {
