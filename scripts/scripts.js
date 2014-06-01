@@ -143,6 +143,20 @@
 				address: 'улица Луначарского, 3/2',
 				schedule: 'с 19 до 22 по будням',
 				imageUrl: 'https://pp.vk.me/c614728/v614728637/10dd6/8ffcNr_6PwI.jpg'
+			}, {
+				coords: [57.995371, 56.219777],
+				header: 'Магазин "Ждем аиста". Одежда для беременных',
+				text: '<a href="https://vk.com/zdemaista" target="_blank">https://vk.com/zdemaista</a><br>Салон молодоженов, 2 этаж',
+				address: 'шоссе Космонавтов, 57',
+				schedule: 'Понедельник–суббота — 11:00–20:00<br>Воскресенье — 11:00–19:00',
+				imageUrl: 'https://pp.vk.me/c614728/v614728637/11232/07JVpV5HEyA.jpg'
+			}, {
+				coords: [58.001041, 56.184863],
+				header: 'Прием электронного лома',
+				text: '<a href="https://vk.com/recycling59" target="_blank">https://vk.com/recycling59</a><br>Также принимают оргтехнику',
+				address: 'улица Барамзиной, 31',
+				schedule: 'Время сдачи нужно уточнять по телефону +7(342)286-44-94',
+				imageUrl: 'https://pp.vk.me/c614728/v614728637/1123a/112Q1AYwtyo.jpg'
 			}
 
 			/*
@@ -154,6 +168,7 @@
 				schedule: '',
 				imageUrl: ''
 			}
+			<a href="" target="_blank"></a>
 			*/
 			/*Нужно фото
 			, {
