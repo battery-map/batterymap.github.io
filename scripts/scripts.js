@@ -157,6 +157,13 @@
 				address: 'улица Барамзиной, 31',
 				schedule: 'Время сдачи нужно уточнять по телефону +7(342)286-44-94',
 				imageUrl: 'https://pp.vk.me/c614728/v614728637/1123a/112Q1AYwtyo.jpg'
+			}, {
+				coords: [58.008698, 56.237770],
+				header: 'Языковая мастерская "Astrum"',
+				text: '1 этаж, 1 подъезд<br><a href="https://vk.com/astrum.perm" target="_blank">https://vk.com/astrum.perm</a><br>Желально заранее позвонить<br>т. 271-33-63<br>т. 271-30-51',
+				address: 'Екатерининская улица, 98',
+				schedule: 'Часы работы: 9.00 - 21.00, воскресение - выходной.',
+				imageUrl: 'https://pp.vk.me/c614728/v614728637/11e89/K6nFM2HHlm8.jpg'
 			}
 
 			/*
