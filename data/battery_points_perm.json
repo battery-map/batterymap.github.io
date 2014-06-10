@@ -5,6 +5,7 @@
 	"schedule": "По будням с 9 до 19 ч. (тел. 239-62-42)",
 	"address": "улица Генкеля, 8",
 	"imageUrl": "http://s.properm.ru/localStorage/collection/cc/c2/ee/f0/ccc2eef0_resizedScaled_659to439.jpg",
+	"footerText": "",
 	"footerLinks": [{
 		"text": "Фото © http://properm.ru/news/society/78466/",
 		"link": "http://properm.ru/news/society/78466/"
@@ -12,8 +13,11 @@
 }, {
 	"coords": [57.994357, 56.238606],
 	"header": "Благотворительный Экологический Фонд \"Обитаемый Урал\" совместно с Фондом \"Нанук\"",
-	"headerLinks": ["https://vk.com/ecour", "https://vk.com/ethnoecocentr"],
 	"text": "Также cюда вы можете принести пластик, стекло, металл и макулатуру.",
+	"links": [
+		"https://vk.com/ecour",
+		"https://vk.com/ethnoecocentr"
+	],
 	"address": "улица Елькина, 45",
 	"schedule": "По будням, с 9 до 21 ч.",
 	"imageUrl": "https://pp.vk.me/c607422/v607422629/4af3/GCbPDslaT5E.jpg"
@@ -24,6 +28,7 @@
 	"address": "улица Макаренко 50 / улица Крупской, 61",
 	"schedule": "По будням, с 9 до 21 ч.",
 	"imageUrl": "http://s.properm.ru/localStorage/collection/8c/2e/2b/96/8c2e2b96_resizedScaled_659to439.jpg",
+	"footerText": "",
 	"footerLinks": [{
 		"text": "Фото © http://properm.ru/news/society/78466/",
 		"link": "http://properm.ru/news/society/78466/"
@@ -31,11 +36,14 @@
 }, {
 	"coords": [58.003719, 56.295197],
 	"header": "Контейнер у сада соловьев",
-	"headerLinks": ["https://vk.com/uinka"],
 	"text": "Первый подъезд дома",
+	"links": [
+		"https://vk.com/uinka"
+	],
 	"address": "улица Аркадия Гайдара, 3",
 	"schedule": "Круглосуточно",
 	"imageUrl": "http://s.properm.ru/localStorage/collection/1a/bb/6a/6./1abb6a6_resizedScaled_659to439.jpg",
+	"footerText": "",
 	"footerLinks": [{
 		"text": "Фото © http://properm.ru/news/society/78466/",
 		"link": "http://properm.ru/news/society/78466/"
@@ -52,33 +60,128 @@
 	"header": "Языковой центр \"Диалог\"",
 	"text": "Необходимо предварительно позвонить: 288-05-33 Мария",
 	"address": "улица Крылова, 4",
-	"schedule": "Часы работы: 10.00 - 20.00",
-	"imageUrl": ""
+	"schedule": "Часы работы: 9.00-18.00",
+	"imageUrl": "https://pp.vk.me/c617216/v617216986/719f/iRTHMuHo7zE.jpg"
 }, {
 	"coords": [58.017181, 56.242511],
 	"header": "Подъезд №2",
 	"text": "",
 	"address": "Сибирская улица, 1",
 	"schedule": "Круглосуточно",
-	"imageUrl": "images/photos/PIC002686.jpg"
+	"imageUrl": "https://pp.vk.me/c608416/v608416637/6390/9SQdA3VqEe8.jpg"
 }, {
 	"coords": [58.005938, 56.195919],
 	"header": "Общежитие №6 ПГНИУ",
 	"text": "Холл общежития перед проходной",
 	"address": "Петропавловская улица, 117",
 	"schedule": "Часы работы: 6.00 - 24.00",
-	"imageUrl": "images/photos/IMG_0788.jpg"
+	"imageUrl": "https://pp.vk.me/c608416/v608416637/6399/XeGA-wcTpuw.jpg"
 }, {
 	"coords": [57.984906, 56.203982],
 	"header": "Центр детского творчества \"Сигнал\"",
-	"headerLinks": ["https://vk.com/signal_perm"],
+	"text": "",
+	"links": [
+		"https://vk.com/signal_perm"
+	],
 	"address": "улица Мира, 8а",
 	"schedule": ""
 }, {
 	"coords": [58.006284, 56.207138],
 	"header": "Хостел П",
-	"headerLinks": ["https://vk.com/hostelp"],
+	"text": "",
+	"links": [
+		"https://vk.com/hostelp"
+	],
 	"address": "улица Ленина, 67",
 	"schedule": "Круглосуточно, обращаться к администратору",
-	"imageUrl": "images/photos/aZZXBeUtLvw.jpg"
+	"imageUrl": "https://pp.vk.me/c605626/v605626386/7320/qxS6P14k62M.jpg"
+}, {
+	"coords": [57.989236, 56.253743],
+	"header": "Прокат туристического снаряжения \"Рассвет Пармы\"",
+	"text": "Вход с торца",
+	"address": "Комсомольский проспект, 90",
+	"schedule": "Часы работы:<br>Суббота, воскресенье: 09:00–21:00<br>Будние дни 12:00–20:00",
+	"imageUrl": "https://pp.vk.me/c608416/v608416637/6565/sYwOgpst-Kc.jpg"
+}, {
+	"coords": [57.974286, 56.165896],
+	"header": "Гимназия №1, каб №31",
+	"text": "",
+	"address": "улица Космонавта Леонова, 14",
+	"schedule": "",
+	"imageUrl": "https://pp.vk.me/c618118/v618118835/3afd/KAwUchXnnD4.jpg"
+}, {
+	"coords": [58.104306, 56.300996],
+	"header": "Отдел экотоваров \"GREENLY\"",
+	"text": "",
+	"address": "улица Вильямса, 41",
+	"schedule": "Часы работы:<br>Будни 10.00-20.00<br>Выходные и праздничные дни 10.00-19.00",
+	"imageUrl": "https://pp.vk.me/c620827/v620827637/4eda/LAydytbdwtM.jpg"
+}, {
+	"coords": [57.988503, 56.206241],
+	"header": "Магазин игрушек \"Маугли\"",
+	"text": "",
+	"address": "Стахановская улица, 54, корпус П",
+	"schedule": "Часы работы:<br>Понедельник — Пятница с 9.00 до 20.00<br>Суббота — с 10.00 до 18.00<br>Воскресенье — с 10 до 16.00",
+	"imageUrl": "https://pp.vk.me/c620827/v620827637/4ee3/rJODAQC_rxY.jpg"
+}, {
+	"coords": [58.007662, 56.184260],
+	"header": "Центр рационального природопользования ПГНИУ",
+	"text": "Библиотека химического корпуса, 1 этаж",
+	"address": "улица Букирева, 10а",
+	"schedule": "",
+	"imageUrl": "https://pp.vk.me/c614727/v614727637/d3ac/tkfSvN-4DjY.jpg"
+}, {
+	"coords": [58.014496, 56.222648],
+	"header": "Велосервис, подготовка лыж и сноубордов \"ТАНДЕМ\"",
+	"text": "",
+	"links": [
+		"https://vk.com/tandemperm"
+	],
+	"address": "улица Окулова, 18",
+	"schedule": "Часы работы:<br>ПН-ПТ 10:00 - 20:00<br>СБ-ВС 10:00 - 20:00",
+	"imageUrl": "https://pp.vk.me/c614727/v614727637/d3da/gfBNJHZK1wI.jpg"
+}, {
+	"coords": [58.012622, 56.261397],
+	"header": "Танцевальный клуб \"Шаг вперёд\"",
+	"text": "Бизнес центр \"Луначарский\", 10-й этаж",
+	"address": "улица Луначарского, 3/2",
+	"schedule": "с 19 до 22 по будням",
+	"imageUrl": "https://pp.vk.me/c614728/v614728637/10dd6/8ffcNr_6PwI.jpg"
+}, {
+	"coords": [57.995371, 56.219777],
+	"header": "Магазин \"Ждем аиста\". Одежда для беременных",
+	"text": "Салон молодоженов, 2 этаж",
+	"links": [
+		"https://vk.com/zdemaista"
+	],
+	"address": "шоссе Космонавтов, 57",
+	"schedule": "Понедельник–суббота — 11:00–20:00<br>Воскресенье — 11:00–19:00",
+	"imageUrl": "https://pp.vk.me/c614728/v614728637/11232/07JVpV5HEyA.jpg"
+}, {
+	"coords": [58.001041, 56.184863],
+	"header": "Прием электронного лома",
+	"text": "Также принимают оргтехнику",
+	"links": [
+		"https://vk.com/recycling59"
+	],
+	"address": "улица Барамзиной, 31",
+	"schedule": "Время сдачи нужно уточнять по телефону +7(342)286-44-94",
+	"imageUrl": "https://pp.vk.me/c614728/v614728637/1123a/112Q1AYwtyo.jpg"
+}, {
+	"coords": [58.008698, 56.237770],
+	"header": "Языковая мастерская \"Astrum\"",
+	"text": "1 этаж, 1 подъезд<br>Желально заранее позвонить<br>т. 271-33-63<br>т. 271-30-51",
+	"links": [
+		"https://vk.com/astrum.perm"
+	],
+	"address": "Екатерининская улица, 98",
+	"schedule": "Часы работы: 9.00 - 21.00, воскресение - выходной.",
+	"imageUrl": "https://pp.vk.me/c614728/v614728637/11e89/K6nFM2HHlm8.jpg"
+}, {
+	"coords": [57.972950, 56.262051],
+	"header": "Школа №94",
+	"text": "",
+	"address": "улица Героев Хасана, 89",
+	"schedule": "",
+	"imageUrl": ""
 }]
