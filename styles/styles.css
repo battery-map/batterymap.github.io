@@ -580,6 +580,13 @@ accent {
     z-index: -1;
 }
 
+.right-image {
+    height: 40px;
+    width: 135px;
+    position: absolute;
+    z-index: -1;
+}
+
 .nav>li>a {
     padding-left: 10px;
     padding-right: 10px;
