@@ -19,6 +19,7 @@
             var slashes = http.concat("//");
             var host = slashes.concat(window.location.host);
             var iconImageHref = host + '/images/battery_map_icon.png';
+            var iconImageSpecialHref = host + '/images/battery_map_icon_special.png';
             for (var index = 0; index < placemarks.length; index++) {
                 var placeInfo = placemarks[index];
 
@@ -59,6 +60,7 @@
                     }
                 }
 
+                var icon = placeInfo.special == true ? iconImageHref ? iconImageSpecialHref;
                 var myPlacemark = new ymaps.Placemark(placeInfo.coords, {
                     hintContent: placeInfo.header,
                     balloonContentBody: html,
@@ -66,7 +68,7 @@
                 }, {
                     // preset: 'islands#redDotIcon'
                     iconLayout: 'default#image',
-                    iconImageHref: iconImageHref,
+                    iconImageHref: icon,
                     iconImageSize: [40, 53],
                     iconImageOffset: [-20, -42]
                 });

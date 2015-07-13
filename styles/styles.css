@@ -288,6 +288,11 @@ FEATURE SECTION
     border-radius: 6px;
 }
 
+.feature-section a {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
 /*
 PRICING
 */
