@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['contactname']) && !empty($_POST['contactemail']) && !empty($_POST['contactmessage'])) {
-		$to = 'gigabytetheone@gmail.com'; // Replace with your email.
-		$body = "Имя: {$_POST['contactname']}\n\nEmail: {$_POST['contactemail']}\n\nСообщение:\n {$_POST['contactmessage']}";
+		$to = 'k@simakov.it';
+		$body = "Имя: {$_POST['contactname']}\n\nEmail: {$_POST['contactemail']}\n\nСообщение:\n\n{$_POST['contactmessage']}";
 	
 		$url = 'https://api.sendgrid.com/api/mail.send.json';
 		$user = 'azure_c6c9355158321572406a74a0ccea61c1@azure.com';
