@@ -20,7 +20,7 @@
             var host = slashes.concat(window.location.host);
             var iconImageHref = host + '/images/battery_map_icon.png';
             var iconImageSpecialHref = host + '/images/battery_map_icon_special.png';
-            for (var index = 0; index < placemarks.length; index++) {
+            for (var index = placemarks.length - 1; index >= 0; index++) {
                 var placeInfo = placemarks[index];
 
                 var html = "";
