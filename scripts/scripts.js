@@ -60,7 +60,7 @@
                     }
                 }
 
-                var icon = placeInfo.special == true ? iconImageHref : iconImageSpecialHref;
+                var icon = placeInfo.special == true ? iconImageSpecialHref : iconImageHref;
                 var myPlacemark = new ymaps.Placemark(placeInfo.coords, {
                     hintContent: placeInfo.header,
                     balloonContentBody: html,
