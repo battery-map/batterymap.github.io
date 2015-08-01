@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		  'bcc' => 'lilyvitamin@gmail.com',
 		  'subject' => "Форма обратной связи battery-map.ru",
 		  'text' => $body,
-		  'from' => 'k@simakov.it',
+		  'from' => $_POST['contactemail'],
 		  'replyto' => $_POST['contactemail']
 		);
 		
