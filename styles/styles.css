@@ -21,6 +21,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans Condensed', 'Oswald', sans-serif;
 }
+h2 small {
+    color: #ecf0f1;
+}
 .heading {
     margin-bottom: 48px;
     font-size: 3em;
