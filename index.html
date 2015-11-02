@@ -68,10 +68,8 @@
                             <li><a class="nav-link" href="#top">Главная</a></li>
                             <li><a class="nav-link" href="#features-link">Информация</a></li>
                             <li><a class="nav-link" href="#map-link">Карта</a></li>
-                            <li><a class="nav-link" href="#profit-link">Помощь</a></li>
                             <li><a class="nav-link" href="#links-link">Ссылки</a></li>
                             <li><a class="nav-link" href="#share-link">Поделиться</a></li>
-                            <li><a class="nav-link" href="#contact-link">Контакты</a></li>
                             <li><a data-yandex-event="vk_group_up_click" href="https://vk.com/batterymap" target="_blank" class="nav-icon" title="ВКонтакте" data-placement="top"><i class="fa fa-vk"></i></a></li>
                         </ul> <!-- end navbar-nav -->
                     </div><!-- end navbar-collapse -->
@@ -158,36 +156,6 @@
                 </div> <!-- end container -->
             </div> <!-- end map -->
 
-            <div id="profit-link"></div>
-            <div class="feature-section">
-                <h1 class="text-center">Чем можно помочь?</h1>
-
-                <div class="row">
-                    <div class="col-sm-1">
-
-                    </div>
-                    <div class="col-sm-10 text-left">
-                        <h2><accent>1.</accent> Самое главное — не выбрасывайте батарейки. Собирайте их у себя дома, храните в пластиковом контейнере, собирайте батарейки у друзей и родственников. В любой момент вы можете отнести их в один из пунктов приёма.</h2>
-                        <br>
-                        <h2><accent>2.</accent> Если у вас есть информация о пункте приёма, которого нет на нашей карте, сообщите, пожалуйста, нам, и мы добавим его.</h2>
-                        <br>
-                        <h2><accent>3.</accent> Вы можете установить контейнер для сбора у своего подъезда или в вашем офисе/магазине. 
-                        <br><small>Желательно правильно оформить контейнер: с нанесением логотипов предприятий, проводящих утилизацию: Мегаполисресурс, и БЭФ Обитаемый урал. Эскизы и логотипы вы можете найти в <a href="https://vk.com/docs?oid=-69796792" target="_blank">разделе "Документы" нашей группы ВКонтакте.</a></small>
-                        <br>
-                        <br>После этого напишите нам, и мы добавим ваш пункт на нашу карту. Собирайте батарейки у себя и отвозите их в <a href="http://ecour.ru" target="_blank">Благотворительный Экологический Фонд "Обитаемый Урал" на Петропавловской, 185 (Дворец молодежи).</a>
-                        <br><small>Батарейки принимаются бесплатно у физических лиц, у юр. лиц по цене завода с учётом доставки (140 р./кг)</small><br>
-                            <br>
-                            Чтобы добавить пункт нам нужна следующая информация:
-                            <br>
-                            - Название<br>
-                            - Адрес<br>
-                            - Дополнительная информация (как пройти, какой этаж и прочая полезная информация)<br>
-                            - Часы работы<br>
-                            - Фото контейнера или фото пункта
-                        </h2>
-                    </div>
-                </div>
-            </div> <!-- end team -->
 
             <div id="links-link"></div>
             <div class="features">
@@ -293,47 +261,6 @@
                     </div> <!-- end row -->
                 </div> <!-- end container -->
             </div> <!-- end features -->
-
-
-            <!-- CONTACT -->
-            <div id="contact-link"></div>
-            <div class="contact">
-                <div class="container">
-                    <h1 class="heading">Вы хотите добавить свою точку на карту?</h1>
-                    <h1 class="heading">У вас есть предложения?</h1>
-                    <div class="row">
-                        <div class="col-sm-6 contact-infos">
-                            <p class="lead">Свяжитесь с нами, вместе мы можем сделать значительно больше!</p>
-                            <div class="contact-info">
-                                <p class="address"><i class="fa fa-user"></i> Константин Симаков </p>
-                                <p class="address"><i class="fa fa-globe"></i> <a href="mailto:k@simakov.it">k@simakov.it</a> </p>
-                            </div>
-                        </div> <!-- end col-sm-6 -->
-                        <div class="col-sm-6">
-                            <form action="scripts/contact.php" method="post" id="contact-form">
-                                <div class="input-group">
-                                    <span class="input-group-addon tool-tip" title="Представьтесь, пожалуйста" data-placement="left"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Представьтесь, пожалуйста" data-validate="validate(required)" />
-                                </div> <!-- end input-group -->
-                                <div class="input-group">
-                                    <span class="input-group-addon tool-tip" title="Ваш Email (мы нигде его не публикуем)" data-placement="left"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Ваш Email (мы нигде его не публикуем)" data-validate="validate(required, email)" />
-                                </div> <!-- end input-group -->
-                                <div class="input-group">
-                                    <span class="input-group-addon tool-tip" title="Ваше сообщение" data-placement="left"><i class="fa fa-pencil"></i></span>
-                                    <textarea class="form-control" id="contact-message" name="contact-message" placeholder="Ваше сообщение" rows="5" data-validate="validate(rangelength(1, 1000))"></textarea>
-                                </div> <!-- end input-group -->
-                                <input type="submit" class="btn btn-lg btn-block" id="contact-form-submit" name="contact-form-submit" value="Отправить" />
-                                <div class="alert alert-success" id="contact-success"></div>
-                                <div class="alert alert-danger" id="contact-error"></div>
-                            </form> <!-- end contact-form -->
-                        </div> <!-- end col-sm-6 -->
-                    </div> <!-- end row -->
-                </div> <!-- end container -->
-            </div> <!-- end contact -->
-
-
-
 
 
             <!-- FOOTER -->

@@ -122,7 +122,7 @@
     /* BACKGROUND PARALLAX */
     function parallax() {
         var scrolled = $(window).scrollTop();
-        $('.background').css('top', -(scrolled * 0.5) + 'px');
+        $('.background').css('top', -(scrolled * 0.5) + 60 + 'px');
     }
     $(window).scroll(function(e) {
         if ($(window).width() > 500) {
@@ -166,16 +166,6 @@
 
     if ($(window).width() > 500) {
         /* ANIMATIONS */
-        $('.navbar-brand').bind('inview', function(event, visible) {
-            if (visible === true) {
-                $(this).addClass('animated fadeInLeft');
-            }
-        });
-        $('.navbar-nav a').bind('inview', function(event, visible) {
-            if (visible === true) {
-                $(this).addClass('animated fadeInRight');
-            }
-        });
         $('.main').bind('inview', function(event, visible) {
             if (visible === true) {
                 $(this).addClass('animated fadeInUp');
