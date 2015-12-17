@@ -182,7 +182,7 @@ MAIN
 */
 .background {
     /*1745 987*/
-    background: url('../images/back3.jpg') repeat center bottom;
+    background: url('../images/back3_black.jpg') repeat center bottom;
     background-size: cover;
     padding: 96px 24px;
     position: fixed;
